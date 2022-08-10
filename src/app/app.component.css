@@ -1,0 +1,49 @@
+.container {
+    margin: 5% auto;
+    width: 600px;
+    height: 700px;
+    background-color: red;
+}
+
+#text {
+    width: 94%;
+    height: 30px;
+    margin: 2%;
+}
+
+.all-buttons {
+    background-color: brown;
+    width: 80%;
+    height: 80%;
+    float: left;
+}
+
+.all-buttons button{
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+}
+
+.numbers {
+    background-color: chartreuse;
+    margin: 0 auto;;
+}
+
+.number-options {
+    float: right;
+}
+
+.operators{
+    float: left;
+    width: 20%;
+}
+
+.operators button {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.clear {
+    clear: both;
+}
