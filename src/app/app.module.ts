@@ -6,12 +6,14 @@ import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    FormsModule,
     MatIconModule,
     BrowserModule,
     MatButtonModule

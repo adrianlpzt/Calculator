@@ -1,30 +1,30 @@
 <div class="container">
-  <input matInput disabled type="text" id="text">
+  <input matInput disabled [(ngModel)]="toshow" type="text" id="text">
   <div class="all-buttons">
     <div class="numbers">
-      <button mat-button>1</button>
-      <button mat-button>2</button>
-      <button mat-button>3</button>
-      <button mat-button>4</button>
-      <button mat-button>5</button>
-      <button mat-button>6</button>
-      <button mat-button>7</button>
-      <button mat-button>8</button>
-      <button mat-button>9</button>
-      <button mat-button>0</button>
-      <button mat-button>.</button>
-      <button mat-button><mat-icon fontIcon="arrow_back"></mat-icon></button>
+      <button mat-button (click)="write('1')">1</button>
+      <button mat-button (click)="write('2')">2</button>
+      <button mat-button (click)="write('3')">3</button>
+      <button mat-button (click)="write('4')">4</button>
+      <button mat-button (click)="write('5')">5</button>
+      <button mat-button (click)="write('6')">6</button>
+      <button mat-button (click)="write('7')">7</button>
+      <button mat-button (click)="write('8')">8</button>
+      <button mat-button (click)="write('9')">9</button>
+      <button mat-button (click)="write('0')">0</button>
+      <button mat-button (click)="write('.')">.</button>
+      <button mat-button (click)="back()"><mat-icon fontIcon="arrow_back"></mat-icon></button>
     </div>
-  </div>
     <div class="operators">
-      <button mat-button>+</button>
-      <button mat-button>-</button>
-      <button mat-button>*</button>
-      <button mat-button>/</button>
+      <button mat-button (click)="write('+')">+</button>
+      <button mat-button (click)="write('-')">-</button>
+      <button mat-button (click)="write('*')">*</button>
+      <button mat-button (click)="write('/')">/</button>
     </div>
-  <div class="clear"></div> 
-  <div class="resolve">
-    <button mat-button>C</button>
-    <button mat-button>=</button>
-  </div>
+    <div class="clear"></div>
+    <div class="resolve">
+      <button mat-button (click)="clear()">C</button>
+      <button mat-button id="equal" (click)="resolve()">=</button>
+    </div>
+</div>
 </div>
