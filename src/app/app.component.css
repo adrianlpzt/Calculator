@@ -1,8 +1,10 @@
+
 .container {
+    border-radius: 15px;
     margin: 5% auto;
-    width: 600px;
-    height: 700px;
-    background-color: red;
+    width: 650px;
+    height: 800px;
+    background-color: #9AD1D4;
 }
 
 #text {
@@ -12,21 +14,24 @@
 }
 
 .all-buttons {
-    background-color: brown;
     width: 80%;
     height: 80%;
     float: left;
 }
 
-.all-buttons button{
-    font-size: 2em;
-    width: 100px;
-    height: 100px;
+.numbers button{
+    font-size: 2.5em;
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    background-color: #CCDBDC;
+    border-radius: 100%;
 }
 
 .numbers {
-    background-color: chartreuse;
-    margin: 0 auto;;
+    margin: 10% 10%;
+    width: 450px;
+    height: 600px;
 }
 
 .number-options {
@@ -35,13 +40,17 @@
 
 .operators{
     float: left;
-    width: 20%;
+    width: 19%;
+    margin: 10% 0 0 -5%;
 }
 
 .operators button {
+    border-radius: 100%;
+    background-color: #80CED7;
+    font-size: 2.5em;
     margin: 5px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .clear {
